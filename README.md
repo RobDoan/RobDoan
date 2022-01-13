@@ -17,7 +17,6 @@ me = Developer.new(name: 'Quy Doan',
                    role: 'Senior Software Developer')
 
 me.extend(FullStackSkills)
-
 me.extend(DevOpsSkills)
 
 
@@ -27,7 +26,7 @@ class Developer
       @name = name
       @experience = experience
       @company = company
-      @company = role
+      @role = role
     end
 end
 
