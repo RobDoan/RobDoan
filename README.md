@@ -23,10 +23,11 @@ me.extend(DevOpsSkills)
 
 class Developer
     attr_reader :name, :experience, :company
-    def initialize(name: , experience:, company: )
+    def initialize(name: , experience:, company:, role: )
       @name = name
       @experience = experience
       @company = company
+      @company = role
     end
 end
 
