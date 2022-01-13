@@ -11,17 +11,25 @@
 
 ```ruby
 
-class FullStackDeveloper < Developer
+me = Developer.new(name: 'Quy Doan',
+                   experience: '15 years',
+                   company: 'Samsung Ads',
+                   role: 'Senior Software Developer')
 
-    attr_reader :name, :experience, :company, :role
+me.extend(FullStackSkills)
+me.extend(DevOpsSkills)
 
-    def initialize
-      @name = 'Quy Doan'
-      @experience = '15 years'
-      @role = 'Software Engineer'
-      @company = 'Samsung Ads'
+
+class Developer
+    attr_reader :name, :experience, :company
+    def initialize(name: , experience:, company: )
+      @name = name
+      @experience = experience
+      @company = company
     end
+end
 
+module FullStackSkills
     def programing_languages
       %w(ruby javascript typescript html css dart go elixir python)
     end
@@ -33,16 +41,19 @@ class FullStackDeveloper < Developer
     def frameworks
       %w(rails react flutter angular backbone)
     end
-    alias_method :frameworks, :libraries
-
-    def devops
-      %w(docker k8s openshift helm aws google-cloud concourse heroku)
-    end
+    alias_method :libraries, :frameworks
 
     def webservers
       %w(nginx haproxy puma)
     end
 end
+
+module DevOpsSkills
+    def devops
+      %w(docker k8s openshift helm aws google-cloud concourse heroku)
+    end
+end
+
 ```
 
 ### ✨ Award ✨
