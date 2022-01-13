@@ -1,6 +1,6 @@
 ![](./assets/banner.svg)
 
-# Hello there, I am Quy <img src="./assets/myprofile.jpeg" width="50">
+# Hi 👋, I am Quy <img src="./assets/myprofile.jpeg" width="50">
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=github.com/RobDoan)
 [![Linkedin: quydoan](https://img.shields.io/badge/-quydoan-blue?logo=linkedin)](https://www.linkedin.com/in/quy-doan-56516512/)
