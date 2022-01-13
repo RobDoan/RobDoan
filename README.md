@@ -3,7 +3,7 @@
 # Hello there, I am Quy <img src="./assets/myprofile.jpeg" width="50">
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=github.com/RobDoan)
-![Linkedin: quydoan](https://img.shields.io/badge/-quydoan-blue?logo=linkedin&link=https://www.linkedin.com/in/quy-doan-56516512/)
+[![Linkedin: quydoan](https://img.shields.io/badge/-quydoan-blue?logo=linkedin)](https://www.linkedin.com/in/quy-doan-56516512/)
 ![Experience](https://img.shields.io/badge/experience-15%20years-success)
 
 
@@ -17,6 +17,7 @@ me = Developer.new(name: 'Quy Doan',
                    role: 'Senior Software Developer')
 
 me.extend(FullStackSkills)
+
 me.extend(DevOpsSkills)
 
 
