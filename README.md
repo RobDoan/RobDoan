@@ -68,13 +68,11 @@ end
 ![github-contribution](https://raw.githubusercontent.com/RobDoan/RobDoan/output/github-contribution-grid-snake.svg)
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-3%20hrs%2037%20mins-blue)
-
-![Profile Views](http://img.shields.io/badge/Profile%20Views-93-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-97-blue)
 
 **🐱 My GitHub Data** 
 
-> 🏆 39 Contributions in the Year 2022
+> 🏆 41 Contributions in the Year 2022
  > 
 > 📦 103.3 kB Used in GitHub's Storage 
  > 
@@ -90,16 +88,24 @@ end
 ⌚︎ Time Zone: America/Toronto
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+Markdown                 2 hrs 40 mins       ██████████████████░░░░░░░   73.69% 
+YAML                     23 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   10.78% 
+Dart                     19 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   9.03% 
+Ruby                     14 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   6.5%
 
 🔥 Editors: 
-No Activity Tracked This Week
+VS Code                  3 hrs 6 mins        █████████████████████░░░░   85.75% 
+Android Studio           19 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   9.03% 
+RubyMine                 11 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   5.23%
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+profile                  3 hrs 6 mins        █████████████████████░░░░   85.75% 
+BlackHole                18 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   8.56% 
+lamar-cms                11 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   5.23% 
+fluturant_table_menu     1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   0.46%
 
 💻 Operating System: 
-No Activity Tracked This Week
+Mac                      3 hrs 37 mins       █████████████████████████   100.0%
 
 ```
 
@@ -120,5 +126,5 @@ Shell                    1 repo              ░░░░░░░░░░░�
 ![Chart not found](https://raw.githubusercontent.com/RobDoan/RobDoan/main/charts/bar_graph.png) 
 
 
- Last Updated on 13/01/2022
+ Last Updated on 14/01/2022
 <!--END_SECTION:waka-->
