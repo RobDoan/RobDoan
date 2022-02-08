@@ -39,6 +39,6 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'github-action@samsung.com'
-          auto_release release . --github_repo=${GITHUB_REPOSITORY}
+          auto_release release . --github_repo=${GITHUB_REPOSITORY} --slack_channel=#lifeguard
 
 
