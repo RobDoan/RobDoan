@@ -1,0 +1,44 @@
+name: Githubflow Release Demo
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 20 10 * * 1,3
+    - cron: 0 23 * * 2,4
+
+env:
+  GITHUB_ACCESS_TOKEN: "${{ secrets.GH_ACCESS_TOKEN }}"
+  SLACK_SECRET_TOKEN: "AAA"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    name: create release
+    strategy:
+      matrix:
+        ruby:
+          - '2.7.2'
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+      - name: add JFROG credential and install auto-release
+        env:
+          JFROG_SECRET: "${{ secrets.JFROG_SECRET }}"
+        run: |
+          curl -u$JFROG_SECRET https://adgear.jfrog.io/artifactory/api/gems/gems/api/v1/api_key.yaml > ~/.gem/credentials
+          chmod 600 ~/.gem/credentials
+          cat ~/.gem/credentials
+          gem install samsung_ads-auto_deploy -s "https://${JFROG_SECRET}@adgear.jfrog.io/artifactory/api/gems/gems/"
+      - name: start release
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'github-action@samsung.com'
+          auto_release release . --github_repo=${GITHUB_REPOSITORY}
+
+
