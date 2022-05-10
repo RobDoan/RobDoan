@@ -13,7 +13,7 @@
 
 me = Developer.new(name: 'Quy Doan',
                    experience: '15 years',
-                   company: 'Samsung Ads',
+                   company: 'Payfare',
                    role: 'Senior Software Developer')
 
 me.extend(FullStackSkills)
